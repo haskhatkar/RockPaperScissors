@@ -1,11 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
     <head>
-        <meta charset="*UTF-8">
-        <title>Rock Paper Scissors</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="description" content="haskhatkar - Rock, Paper, Scissors">
+        <meta name="keywords" content="haskhatkar - Rock, Paper, Scissors">
+        <meta name="author" content="haskhatkar">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Rock, Paper, Scissors</title>
+
+        <meta property='og:title' content='Rock, Paper, Scissors'/>
+        <meta property='og:description' content='Rock, Paper, Scissors'/>
+        <meta property='og:url' content='https://github.com/haskhatkar'/>
+        <meta property='og:type' content='website'/>
+
+        <link href="style.css" rel="stylesheet">
     </head>
+
     <body>
-        <script src="rock_paper_scissors.js"></script>
+        <div class="grid-container">
+            <div class="grid-row-1-col-1">
+                <div id="image-playerelement">
+                    <i id="player-element">PLAYER</i>
+                </div>
+            </div>
+            <div class="grid-row-1-col-3">
+                <div id="image-computerelement">
+                    <i id="computer-element">COMPUTER</i>
+                </div>
+            </div>
+
+
+            <div class="grid-row-2-col-1">
+                <button class="element-button" id="rock-button" value="rock">
+                    <i class="fas fa-rock"> </br> Rock </i> 
+                </button>
+            </div>
+            <div class="grid-row-2-col-2">
+                <button class="element-button" id="paper-button" value="paper">
+                    <i class="fas fa-paper"> <br> Paper </i> </button>
+                </button>
+            </div>
+            <div class="grid-row-2-col-3">
+                <button class="element-button" id="scissors-button" value="scissors">
+                    <i class="fas fa-scissors"> </br> Scissors </i> </button>
+                </button>
+            </div>
+
+
+            <div class="grid-row-3-col-1">
+                <div id="result-playerscore"></div>
+            </div>
+            <div class="grid-row-3-col-2">
+                <div id="result"></div>
+            </div>
+            <div class="grid-row-3-col-3">
+                <div id="result-computerscore"></div>
+            </div>
+
+        </div>
+
+    <script src="rock_paper_scissors.js"></script>
     </body>
 </html>
