@@ -73,10 +73,10 @@ function updateChoices(playerSelection, computerSelection) {
     computerElement.classList.add("active"); 
     
     // creates a second set of variables to pull our button.value
-    const playerElementClassName = `fa-${playerSelection}`
-    const computerElementClassName = `fa-${computerSelection}`
+    const playerElementClassName = `${playerSelection}`
+    const computerElementClassName = `${computerSelection}`
     
-    playerElement.classList = `fas ${playerElementClassName} active`;
-    computerElement.classList = `fas ${computerElementClassName} active`;
+    playerElement.classList = `${playerElementClassName} active`;
+    computerElement.classList = `${computerElementClassName} active`;
     
   }
