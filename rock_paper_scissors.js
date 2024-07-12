@@ -37,20 +37,20 @@ function playRound(playerSelection) {
         (playerSelection == 'paper' && computerSelection == 'rock') ||
         (playerSelection = 'scissors' && computerSelection == 'paper')) {
             playerScore += 1
-            result = '<br><b>You win: </b><br>' + playerSelection + ' beats ' + computerSelection
+            result = `<br><b>You win: </b><br>` + playerSelection + ` beats ` + computerSelection;
 
                 if (playerScore == 5) {
-                    result += '<br><br>Player wins game. Reload page to play again.'
+                    result += `<br><br>Player wins game. Reload page to play again.`
                     disableButtons()
                 }
     }
 
     else {
         computerScore += 1
-        result = '<br><b>Defeat:</b><br>' + computerSelection + ' beats ' + playerSelection
+        result = `<br><b>Defeat:</b><br>` + computerSelection + ` beats ` + playerSelection;
 
             if (computerScore == 5) {
-                result += '<br><br>Computer wins game. Reload the page to play again.'
+                result += `<br><br>Computer wins game. Reload the page to play again.`
                 disableButtons()
             }
         }
