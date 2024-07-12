@@ -16,7 +16,7 @@ function disableButtons() {
 }
 
 function computerPlay() {
-    const choices = ['rock', 'paper', 'scissors'];
+    const choices = ["rock", "paper", "scissors"];
     let choicesIndex = Math.floor(Math.random() * choices.length);
 
     return choices[choicesIndex];
@@ -36,22 +36,22 @@ function playRound(playerSelection) {
     else if ((playerSelection == 'rock' && computerSelection == 'paper') ||
         (playerSelection == 'paper' && computerSelection == 'rock') ||
         (playerSelection = 'scissors' && computerSelection == 'paper')) {
-            playerScore += 1
+            playerScore += 1;
             result = `<br><b>You win: </b><br>` + playerSelection + ` beats ` + computerSelection;
 
                 if (playerScore == 5) {
                     result += `<br><br>Player wins game. Reload page to play again.`
-                    disableButtons()
+                    disableButtons();
                 }
     }
 
     else {
-        computerScore += 1
+        computerScore += 1;
         result = `<br><b>Defeat:</b><br>` + computerSelection + ` beats ` + playerSelection;
 
             if (computerScore == 5) {
                 result += `<br><br>Computer wins game. Reload the page to play again.`
-                disableButtons()
+                disableButtons();
             }
         }
 
